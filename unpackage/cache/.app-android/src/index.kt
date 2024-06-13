@@ -16,7 +16,6 @@ import kotlinx.coroutines.Deferred;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.async;
 import io.dcloud.uniapp.appframe.AppConfig;
-import io.dcloud.uniapp.extapi.exit as uni_exit;
 import io.dcloud.uniapp.extapi.showToast as uni_showToast;
 var firstBackTime: Number = 0;
 open class GenApp : BaseApp {
@@ -36,14 +35,14 @@ open class GenApp : BaseApp {
         onLastPageBackPress(fun() {
             console.log("App LastPageBackPress", " at App.uvue:19");
             if (firstBackTime == 0) {
-                uni_showToast(ShowToastOptions(title = "再按一次退出应用", position = "bottom"));
+                uni_showToast(ShowToastOptions(title = "再按一次返回桌面", position = "bottom"));
                 firstBackTime = Date.now();
                 setTimeout(fun(){
                     firstBackTime = 0;
                 }, 2000);
             } else if (Date.now() - firstBackTime < 2000) {
                 firstBackTime = Date.now();
-                uni_exit(null);
+                UTSAndroid.getUniActivity()?.moveTaskToBack(true);
             }
         }
         , instance);
