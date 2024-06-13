@@ -1,0 +1,1460 @@
+<template>
+	<view class="newMusic">
+		<text class="title">推荐新音乐</text>
+		<template v-for="it in data.result">
+			<view class="item">
+				<image class="itemImg" :src="it['picUrl']" mode=""></image>
+				<text class="name">{{ it['name'] }}</text>
+				<image class="play" src="../../../static/play.png" mode=""></image>
+			</view>
+		</template>
+	</view>
+</template>
+
+<script setup lang="uts">
+	
+	
+const data = {
+    "code": 200,
+    "category": 5,
+    "result": [
+        {
+            "id": 2158973221,
+            "type": 4,
+            "name": "若月亮没来 (Live版)",
+            "copywriter": null,
+            "picUrl": "http://p1.music.126.net/4iTkYFSI2ILuXnv9yBgSnw==/109951169617468185.jpg",
+            "canDislike": false,
+            "trackNumberUpdateTime": null,
+            "song": {
+                "name": "若月亮没来 (Live版)",
+                "id": 2158973221,
+                "position": 0,
+                "alias": "",
+                "status": 0,
+                "fee": 8,
+                "copyrightId": 2712562,
+                "disc": "01",
+                "no": 3,
+                "artists": [
+                    {
+                        "name": "杨宗纬",
+                        "id": 6066,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    {
+                        "name": "宝石Gem",
+                        "id": 12084497,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    {
+                        "name": "王宇宙Leto",
+                        "id": 49144727,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    }
+                ],
+                "album": {
+                    "name": "天赐的声音第五季 第5期",
+                    "id": 197079448,
+                    "type": "专辑",
+                    "size": 12,
+                    "picId": 109951169617468200,
+                    "blurPicUrl": "http://p3.music.126.net/4iTkYFSI2ILuXnv9yBgSnw==/109951169617468185.jpg",
+                    "companyId": 0,
+                    "pic": 109951169617468200,
+                    "picUrl": "http://p4.music.126.net/4iTkYFSI2ILuXnv9yBgSnw==/109951169617468185.jpg",
+                    "publishTime": 1716480000000,
+                    "description": "",
+                    "tags": "",
+                    "company": "浙江卫视",
+                    "briefDesc": "",
+                    "artist": {
+                        "name": "",
+                        "id": 0,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": '',
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    "songs": "",
+                    "alias": "",
+                    "status": 1,
+                    "copyrightId": 2712562,
+                    "commentThreadId": "R_AL_3_197079448",
+                    "artists": [
+                        {
+                            "name": "天赐的声音",
+                            "id": 34485896,
+                            "picId": 0,
+                            "img1v1Id": 0,
+                            "briefDesc": "",
+                            "picUrl": "",
+                            "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "albumSize": 0,
+                            "alias": "",
+                            "trans": "",
+                            "musicSize": 0,
+                            "topicPerson": 0
+                        }
+                    ],
+                    "subType": "现场版",
+                    "transName": null,
+                    "onSale": false,
+                    "mark": 0,
+                    "gapless": 0,
+                    "picId_str": "109951169617468185"
+                },
+                "starred": false,
+                "popularity": 100,
+                "score": 100,
+                "starredNum": 0,
+                "duration": 251938,
+                "playedNum": 0,
+                "dayPlays": 0,
+                "hearTime": 0,
+                "sqMusic": {
+                    "name": null,
+                    "id": 9208999826,
+                    "size": 28907671,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 917929,
+                    "playTime": 251938,
+                    "volumeDelta": -31510
+                },
+                "hrMusic": {
+                    "name": null,
+                    "id": 9208999824,
+                    "size": 53159794,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 1688027,
+                    "playTime": 251938,
+                    "volumeDelta": -31092
+                },
+                "ringtone": "",
+                "crbt": null,
+                "audition": null,
+                "copyFrom": "",
+                "commentThreadId": "R_SO_4_2158973221",
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": "",
+                "copyright": 0,
+                "transName": null,
+                "sign": null,
+                "mark": 0,
+                "originCoverType": 2,
+                "originSongSimpleData": {
+                    "songId": 2119795491,
+                    "name": "若月亮没来 (若是月亮还没来)",
+                    "artists": [
+                        {
+                            "id": 49144727,
+                            "name": "王宇宙Leto"
+                        },
+                        {
+                            "id": 29785908,
+                            "name": "乔浚丞"
+                        }
+                    ],
+                    "albumMeta": {
+                        "id": 183856439,
+                        "name": "若月亮没来（若是月亮还没来）"
+                    }
+                },
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "mvid": 0,
+                "hMusic": {
+                    "name": null,
+                    "id": 9208999823,
+                    "size": 10080045,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 320000,
+                    "playTime": 251938,
+                    "volumeDelta": -31116
+                },
+                "mMusic": {
+                    "name": null,
+                    "id": 9208999831,
+                    "size": 6048045,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 192000,
+                    "playTime": 251938,
+                    "volumeDelta": -28511
+                },
+                "lMusic": {
+                    "name": null,
+                    "id": 9208999825,
+                    "size": 4032045,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 251938,
+                    "volumeDelta": -26796
+                },
+                "bMusic": {
+                    "name": null,
+                    "id": 9208999825,
+                    "size": 4032045,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 251938,
+                    "volumeDelta": -26796
+                },
+                "rtype": 0,
+                "rurl": null,
+                "mp3Url": null,
+                "privilege": {
+                    "id": 2158973221,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false,
+                    "playMaxbr": 999000,
+                    "downloadMaxbr": 999000,
+                    "maxBrLevel": "hires",
+                    "playMaxBrLevel": "hires",
+                    "downloadMaxBrLevel": "hires",
+                    "plLevel": "exhigh",
+                    "dlLevel": "none",
+                    "flLevel": "exhigh",
+                    "rscl": null,
+                    "freeTrialPrivilege": {
+                        "resConsumable": false,
+                        "userConsumable": false,
+                        "listenType": null,
+                        "cannotListenReason": null,
+                        "playReason": null
+                    },
+                    "rightSource": 0,
+                    "chargeInfoList": [
+                        {
+                            "rate": 128000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 192000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 320000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        },
+                        {
+                            "rate": 1999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        }
+                    ]
+                }
+            },
+            "alg": "server_doudi"
+        },
+        {
+            "id": 2163982959,
+            "type": 4,
+            "name": "异客 (Live版)",
+            "copywriter": null,
+            "picUrl": "http://p1.music.126.net/jWyR23nQNhhyHC_gCmgIPQ==/109951169661028262.jpg",
+            "canDislike": false,
+            "trackNumberUpdateTime": null,
+            "song": {
+                "name": "异客 (Live版)",
+                "id": 2163982959,
+                "position": 0,
+                "alias": "",
+                "status": 0,
+                "fee": 8,
+                "copyrightId": 2712562,
+                "disc": "01",
+                "no": 8,
+                "artists": [
+                    {
+                        "name": "杨坤",
+                        "id": 6068,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    {
+                        "name": "王睿卓",
+                        "id": 52113028,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    {
+                        "name": "王赫野",
+                        "id": 47091532,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    }
+                ],
+                "album": {
+                    "name": "天赐的声音第五季 第7期",
+                    "id": 198583185,
+                    "type": "专辑",
+                    "size": 16,
+                    "picId": 109951169661028260,
+                    "blurPicUrl": "http://p4.music.126.net/jWyR23nQNhhyHC_gCmgIPQ==/109951169661028262.jpg",
+                    "companyId": 0,
+                    "pic": 109951169661028260,
+                    "picUrl": "http://p3.music.126.net/jWyR23nQNhhyHC_gCmgIPQ==/109951169661028262.jpg",
+                    "publishTime": 1717689600000,
+                    "description": "",
+                    "tags": "",
+                    "company": "浙江卫视",
+                    "briefDesc": "",
+                    "artist": {
+                        "name": "",
+                        "id": 0,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    "songs": "",
+                    "alias": "",
+                    "status": 1,
+                    "copyrightId": 2712562,
+                    "commentThreadId": "R_AL_3_198583185",
+                    "artists": [
+                        {
+                            "name": "天赐的声音",
+                            "id": 34485896,
+                            "picId": 0,
+                            "img1v1Id": 0,
+                            "briefDesc": "",
+                            "picUrl": "",
+                            "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "albumSize": 0,
+                            "alias": "",
+                            "trans": "",
+                            "musicSize": 0,
+                            "topicPerson": 0
+                        }
+                    ],
+                    "subType": "现场版",
+                    "transName": null,
+                    "onSale": false,
+                    "mark": 0,
+                    "gapless": 0,
+                    "picId_str": "109951169661028262"
+                },
+                "starred": false,
+                "popularity": 100,
+                "score": 100,
+                "starredNum": 0,
+                "duration": 227250,
+                "playedNum": 0,
+                "dayPlays": 0,
+                "hearTime": 0,
+                "sqMusic": {
+                    "name": null,
+                    "id": 9261789256,
+                    "size": 27845359,
+                    "extension": "flac",
+                    "sr": 44100,
+                    "dfsId": 0,
+                    "bitrate": 980254,
+                    "playTime": 227250,
+                    "volumeDelta": -49524
+                },
+                "hrMusic": null,
+                "ringtone": "",
+                "crbt": null,
+                "audition": null,
+                "copyFrom": "",
+                "commentThreadId": "R_SO_4_2163982959",
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": "",
+                "copyright": 0,
+                "transName": null,
+                "sign": null,
+                "mark": 0,
+                "originCoverType": 2,
+                "originSongSimpleData": {
+                    "songId": 2137785330,
+                    "name": "异客",
+                    "artists": [
+                        {
+                            "id": 0,
+                            "name": "杨坤"
+                        }
+                    ],
+                    "albumMeta": {
+                        "id": 0,
+                        "name": ""
+                    }
+                },
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "mvid": 0,
+                "hMusic": {
+                    "name": null,
+                    "id": 9261789251,
+                    "size": 9092746,
+                    "extension": "mp3",
+                    "sr": 44100,
+                    "dfsId": 0,
+                    "bitrate": 320000,
+                    "playTime": 227250,
+                    "volumeDelta": -49170
+                },
+                "mMusic": {
+                    "name": null,
+                    "id": 9261789252,
+                    "size": 5455665,
+                    "extension": "mp3",
+                    "sr": 44100,
+                    "dfsId": 0,
+                    "bitrate": 192000,
+                    "playTime": 227250,
+                    "volumeDelta": -46642
+                },
+                "lMusic": {
+                    "name": null,
+                    "id": 9261789257,
+                    "size": 3637124,
+                    "extension": "mp3",
+                    "sr": 44100,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 227250,
+                    "volumeDelta": -45113
+                },
+                "bMusic": {
+                    "name": null,
+                    "id": 9261789257,
+                    "size": 3637124,
+                    "extension": "mp3",
+                    "sr": 44100,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 227250,
+                    "volumeDelta": -45113
+                },
+                "rtype": 0,
+                "rurl": null,
+                "mp3Url": null,
+                "privilege": {
+                    "id": 2163982959,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false,
+                    "playMaxbr": 999000,
+                    "downloadMaxbr": 999000,
+                    "maxBrLevel": "lossless",
+                    "playMaxBrLevel": "lossless",
+                    "downloadMaxBrLevel": "lossless",
+                    "plLevel": "exhigh",
+                    "dlLevel": "none",
+                    "flLevel": "exhigh",
+                    "rscl": null,
+                    "freeTrialPrivilege": {
+                        "resConsumable": false,
+                        "userConsumable": false,
+                        "listenType": null,
+                        "cannotListenReason": null,
+                        "playReason": null
+                    },
+                    "rightSource": 0,
+                    "chargeInfoList": [
+                        {
+                            "rate": 128000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 192000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 320000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        }
+                    ]
+                }
+            },
+            "alg": "server_doudi"
+        },
+        {
+            "id": 2164260202,
+            "type": 4,
+            "name": "你在，不在 (live)",
+            "copywriter": null,
+            "picUrl": "http://p1.music.126.net/la6-9Bo6WY7pupYPzK-gYg==/109951169665666559.jpg",
+            "canDislike": false,
+            "trackNumberUpdateTime": null,
+            "song": {
+                "name": "你在，不在 (live)",
+                "id": 2164260202,
+                "position": 0,
+                "alias": "",
+                "status": 0,
+                "fee": 8,
+                "copyrightId": 7001,
+                "disc": "01",
+                "no": 1,
+                "artists": [
+                    {
+                        "name": "汪苏泷",
+                        "id": 5538,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    }
+                ],
+                "album": {
+                    "name": "歌手2024 第5期",
+                    "id": 198674841,
+                    "type": "专辑",
+                    "size": 5,
+                    "picId": 109951169665666560,
+                    "blurPicUrl": "http://p4.music.126.net/la6-9Bo6WY7pupYPzK-gYg==/109951169665666559.jpg",
+                    "companyId": 0,
+                    "pic": 109951169665666560,
+                    "picUrl": "http://p4.music.126.net/la6-9Bo6WY7pupYPzK-gYg==/109951169665666559.jpg",
+                    "publishTime": 1717776000000,
+                    "description": "",
+                    "tags": "",
+                    "company": "索尼音乐X芒果TV",
+                    "briefDesc": "",
+                    "artist": {
+                        "name": "",
+                        "id": 0,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    "songs": "",
+                    "alias": "",
+                    "status": 1,
+                    "copyrightId": 7001,
+                    "commentThreadId": "R_AL_3_198674841",
+                    "artists": [
+                        {
+                            "name": "歌手2024",
+                            "id": 34299694,
+                            "picId": 0,
+                            "img1v1Id": 0,
+                            "briefDesc": "",
+                            "picUrl": "",
+                            "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "albumSize": 0,
+                            "alias": "",
+                            "trans": "",
+                            "musicSize": 0,
+                            "topicPerson": 0
+                        }
+                    ],
+                    "subType": "现场版",
+                    "transName": null,
+                    "onSale": false,
+                    "mark": 0,
+                    "gapless": 0,
+                    "picId_str": "109951169665666559"
+                },
+                "starred": false,
+                "popularity": 100,
+                "score": 100,
+                "starredNum": 0,
+                "duration": 257260,
+                "playedNum": 0,
+                "dayPlays": 0,
+                "hearTime": 0,
+                "sqMusic": {
+                    "name": null,
+                    "id": 9263732434,
+                    "size": 31364857,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 975350,
+                    "playTime": 257260,
+                    "volumeDelta": -23683
+                },
+                "hrMusic": {
+                    "name": null,
+                    "id": 9263732429,
+                    "size": 56138794,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 1745744,
+                    "playTime": 257260,
+                    "volumeDelta": -22938
+                },
+                "ringtone": "",
+                "crbt": null,
+                "audition": null,
+                "copyFrom": "",
+                "commentThreadId": "R_SO_4_2164260202",
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": "",
+                "copyright": 0,
+                "transName": null,
+                "sign": null,
+                "mark": 0,
+                "originCoverType": 2,
+                "originSongSimpleData": {
+                    "songId": 233921,
+                    "name": "你在 不在",
+                    "artists": [
+                        {
+                            "id": 7762,
+                            "name": "郭采洁"
+                        }
+                    ],
+                    "albumMeta": {
+                        "id": 23495,
+                        "name": "爱异想"
+                    }
+                },
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "mvid": 0,
+                "hMusic": {
+                    "name": null,
+                    "id": 9263732431,
+                    "size": 10293165,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 320000,
+                    "playTime": 257260,
+                    "volumeDelta": -22925
+                },
+                "mMusic": {
+                    "name": null,
+                    "id": 9263732430,
+                    "size": 6175917,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 192000,
+                    "playTime": 257260,
+                    "volumeDelta": -20353
+                },
+                "lMusic": {
+                    "name": null,
+                    "id": 9263732436,
+                    "size": 4117293,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 257260,
+                    "volumeDelta": -18701
+                },
+                "bMusic": {
+                    "name": null,
+                    "id": 9263732436,
+                    "size": 4117293,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 257260,
+                    "volumeDelta": -18701
+                },
+                "rtype": 0,
+                "rurl": null,
+                "mp3Url": null,
+                "privilege": {
+                    "id": 2164260202,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 260,
+                    "preSell": false,
+                    "playMaxbr": 999000,
+                    "downloadMaxbr": 999000,
+                    "maxBrLevel": "hires",
+                    "playMaxBrLevel": "hires",
+                    "downloadMaxBrLevel": "hires",
+                    "plLevel": "exhigh",
+                    "dlLevel": "none",
+                    "flLevel": "exhigh",
+                    "rscl": null,
+                    "freeTrialPrivilege": {
+                        "resConsumable": false,
+                        "userConsumable": false,
+                        "listenType": null,
+                        "cannotListenReason": null,
+                        "playReason": null
+                    },
+                    "rightSource": 0,
+                    "chargeInfoList": [
+                        {
+                            "rate": 128000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 192000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 320000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        },
+                        {
+                            "rate": 1999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        }
+                    ]
+                }
+            },
+            "alg": "server_doudi"
+        },
+        {
+            "id": 2161527760,
+            "type": 4,
+            "name": "不如回家喝自来水 (Live版)",
+            "copywriter": null,
+            "picUrl": "http://p1.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg",
+            "canDislike": false,
+            "trackNumberUpdateTime": null,
+            "song": {
+                "name": "不如回家喝自来水 (Live版)",
+                "id": 2161527760,
+                "position": 0,
+                "alias": "",
+                "status": 0,
+                "fee": 8,
+                "copyrightId": 2712562,
+                "disc": "01",
+                "no": 1,
+                "artists": [
+                    {
+                        "name": "陈楚生",
+                        "id": 2124,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    {
+                        "name": "王赫野",
+                        "id": 47091532,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    }
+                ],
+                "album": {
+                    "name": "天赐的声音第五季 第6期",
+                    "id": 197888525,
+                    "type": "专辑",
+                    "size": 12,
+                    "picId": 109951169638223100,
+                    "blurPicUrl": "http://p4.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg",
+                    "companyId": 0,
+                    "pic": 109951169638223100,
+                    "picUrl": "http://p3.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg",
+                    "publishTime": 1717084800000,
+                    "description": "",
+                    "tags": "",
+                    "company": "浙江卫视",
+                    "briefDesc": "",
+                    "artist": {
+                        "name": "",
+                        "id": 0,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    "songs": "",
+                    "alias": "",
+                    "status": 1,
+                    "copyrightId": 2712562,
+                    "commentThreadId": "R_AL_3_197888525",
+                    "artists": [
+                        {
+                            "name": "天赐的声音",
+                            "id": 34485896,
+                            "picId": 0,
+                            "img1v1Id": 0,
+                            "briefDesc": "",
+                            "picUrl": "",
+                            "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "albumSize": 0,
+                            "alias": "",
+                            "trans": "",
+                            "musicSize": 0,
+                            "topicPerson": 0
+                        }
+                    ],
+                    "subType": "现场版",
+                    "transName": null,
+                    "onSale": false,
+                    "mark": 0,
+                    "gapless": 0,
+                    "picId_str": "109951169638223106"
+                },
+                "starred": false,
+                "popularity": 100,
+                "score": 100,
+                "starredNum": 0,
+                "duration": 201306,
+                "playedNum": 0,
+                "dayPlays": 0,
+                "hearTime": 0,
+                "sqMusic": {
+                    "name": null,
+                    "id": 9236309970,
+                    "size": 25488081,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 1012906,
+                    "playTime": 201306,
+                    "volumeDelta": -58066
+                },
+                "hrMusic": {
+                    "name": null,
+                    "id": 9236309975,
+                    "size": 44859627,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 1782740,
+                    "playTime": 201306,
+                    "volumeDelta": -58104
+                },
+                "ringtone": "",
+                "crbt": null,
+                "audition": null,
+                "copyFrom": "",
+                "commentThreadId": "R_SO_4_2161527760",
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": "",
+                "copyright": 0,
+                "transName": null,
+                "sign": null,
+                "mark": 0,
+                "originCoverType": 2,
+                "originSongSimpleData": {
+                    "songId": 2109988312,
+                    "name": "不如回家喝自来水",
+                    "artists": [
+                        {
+                            "id": 31255673,
+                            "name": "刘烨溦"
+                        }
+                    ],
+                    "albumMeta": {
+                        "id": 181445218,
+                        "name": "不如回家喝自来水"
+                    }
+                },
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "mvid": 0,
+                "hMusic": {
+                    "name": null,
+                    "id": 9236309979,
+                    "size": 8054445,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 320000,
+                    "playTime": 201306,
+                    "volumeDelta": -58142
+                },
+                "mMusic": {
+                    "name": null,
+                    "id": 9236309972,
+                    "size": 4832685,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 192000,
+                    "playTime": 201306,
+                    "volumeDelta": -55602
+                },
+                "lMusic": {
+                    "name": null,
+                    "id": 9236309976,
+                    "size": 3221805,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 201306,
+                    "volumeDelta": -54067
+                },
+                "bMusic": {
+                    "name": null,
+                    "id": 9236309976,
+                    "size": 3221805,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 201306,
+                    "volumeDelta": -54067
+                },
+                "rtype": 0,
+                "rurl": null,
+                "mp3Url": null,
+                "privilege": {
+                    "id": 2161527760,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false,
+                    "playMaxbr": 999000,
+                    "downloadMaxbr": 999000,
+                    "maxBrLevel": "hires",
+                    "playMaxBrLevel": "hires",
+                    "downloadMaxBrLevel": "hires",
+                    "plLevel": "exhigh",
+                    "dlLevel": "none",
+                    "flLevel": "exhigh",
+                    "rscl": null,
+                    "freeTrialPrivilege": {
+                        "resConsumable": false,
+                        "userConsumable": false,
+                        "listenType": null,
+                        "cannotListenReason": null,
+                        "playReason": null
+                    },
+                    "rightSource": 0,
+                    "chargeInfoList": [
+                        {
+                            "rate": 128000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 192000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 320000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        },
+                        {
+                            "rate": 1999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        }
+                    ]
+                }
+            },
+            "alg": "server_doudi"
+        },
+        {
+            "id": 2156439313,
+            "type": 4,
+            "name": "虹之间 (Live版)",
+            "copywriter": null,
+            "picUrl": "http://p1.music.126.net/DzkD7eQvZgAk58dbRa230Q==/109951169597295003.jpg",
+            "canDislike": false,
+            "trackNumberUpdateTime": null,
+            "song": {
+                "name": "虹之间 (Live版)",
+                "id": 2156439313,
+                "position": 0,
+                "alias": "",
+                "status": 0,
+                "fee": 8,
+                "copyrightId": 2712562,
+                "disc": "01",
+                "no": 5,
+                "artists": [
+                    {
+                        "name": "王赫野",
+                        "id": 47091532,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    {
+                        "name": "姚晓棠",
+                        "id": 33709222,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    }
+                ],
+                "album": {
+                    "name": "天赐的声音第五季 第4期",
+                    "id": 196072242,
+                    "type": "专辑",
+                    "size": 10,
+                    "picId": 109951169597295000,
+                    "blurPicUrl": "http://p4.music.126.net/DzkD7eQvZgAk58dbRa230Q==/109951169597295003.jpg",
+                    "companyId": 0,
+                    "pic": 109951169597295000,
+                    "picUrl": "http://p4.music.126.net/DzkD7eQvZgAk58dbRa230Q==/109951169597295003.jpg",
+                    "publishTime": 1715875200000,
+                    "description": "",
+                    "tags": "",
+                    "company": "浙江卫视",
+                    "briefDesc": "",
+                    "artist": {
+                        "name": "",
+                        "id": 0,
+                        "picId": 0,
+                        "img1v1Id": 0,
+                        "briefDesc": "",
+                        "picUrl": "",
+                        "img1v1Url": "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                        "albumSize": 0,
+                        "alias": "",
+                        "trans": "",
+                        "musicSize": 0,
+                        "topicPerson": 0
+                    },
+                    "songs": "",
+                    "alias": "",
+                    "status": 1,
+                    "copyrightId": 2712562,
+                    "commentThreadId": "R_AL_3_196072242",
+                    "artists": [
+                        {
+                            "name": "天赐的声音",
+                            "id": 34485896,
+                            "picId": 0,
+                            "img1v1Id": 0,
+                            "briefDesc": "",
+                            "picUrl": "",
+                            "img1v1Url": "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                            "albumSize": 0,
+                            "alias": "",
+                            "trans": "",
+                            "musicSize": 0,
+                            "topicPerson": 0
+                        }
+                    ],
+                    "subType": "现场版",
+                    "transName": null,
+                    "onSale": false,
+                    "mark": 0,
+                    "gapless": 0,
+                    "picId_str": "109951169597295003"
+                },
+                "starred": false,
+                "popularity": 100,
+                "score": 100,
+                "starredNum": 0,
+                "duration": 207574,
+                "playedNum": 0,
+                "dayPlays": 0,
+                "hearTime": 0,
+                "sqMusic": {
+                    "name": null,
+                    "id": 9180531413,
+                    "size": 22486482,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 866636,
+                    "playTime": 207574,
+                    "volumeDelta": -35754
+                },
+                "hrMusic": {
+                    "name": null,
+                    "id": 9180531414,
+                    "size": 42452785,
+                    "extension": "flac",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 1636144,
+                    "playTime": 207574,
+                    "volumeDelta": -35953
+                },
+                "ringtone": "",
+                "crbt": null,
+                "audition": null,
+                "copyFrom": "",
+                "commentThreadId": "R_SO_4_2156439313",
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": "",
+                "copyright": 0,
+                "transName": null,
+                "sign": null,
+                "mark": 0,
+                "originCoverType": 2,
+                "originSongSimpleData": {
+                    "songId": 28219176,
+                    "name": "虹之间",
+                    "artists": [
+                        {
+                            "id": 827163,
+                            "name": "金贵晟"
+                        }
+                    ],
+                    "albumMeta": {
+                        "id": 2755020,
+                        "name": "爱情公寓4 电视原声带"
+                    }
+                },
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "mvid": 0,
+                "hMusic": {
+                    "name": null,
+                    "id": 9180531415,
+                    "size": 8305005,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 320000,
+                    "playTime": 207574,
+                    "volumeDelta": -35956
+                },
+                "mMusic": {
+                    "name": null,
+                    "id": 9180531417,
+                    "size": 4983021,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 192000,
+                    "playTime": 207574,
+                    "volumeDelta": -33342
+                },
+                "lMusic": {
+                    "name": null,
+                    "id": 9180531412,
+                    "size": 3322029,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 207574,
+                    "volumeDelta": -31608
+                },
+                "bMusic": {
+                    "name": null,
+                    "id": 9180531412,
+                    "size": 3322029,
+                    "extension": "mp3",
+                    "sr": 48000,
+                    "dfsId": 0,
+                    "bitrate": 128000,
+                    "playTime": 207574,
+                    "volumeDelta": -31608
+                },
+                "rtype": 0,
+                "rurl": null,
+                "mp3Url": null,
+                "privilege": {
+                    "id": 2156439313,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false,
+                    "playMaxbr": 999000,
+                    "downloadMaxbr": 999000,
+                    "maxBrLevel": "hires",
+                    "playMaxBrLevel": "hires",
+                    "downloadMaxBrLevel": "hires",
+                    "plLevel": "exhigh",
+                    "dlLevel": "none",
+                    "flLevel": "exhigh",
+                    "rscl": null,
+                    "freeTrialPrivilege": {
+                        "resConsumable": false,
+                        "userConsumable": false,
+                        "listenType": null,
+                        "cannotListenReason": null,
+                        "playReason": null
+                    },
+                    "rightSource": 0,
+                    "chargeInfoList": [
+                        {
+                            "rate": 128000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 192000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 320000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 0
+                        },
+                        {
+                            "rate": 999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        },
+                        {
+                            "rate": 1999000,
+                            "chargeUrl": null,
+                            "chargeMessage": null,
+                            "chargeType": 1
+                        }
+                    ]
+                }
+            },
+            "alg": "server_doudi"
+        }
+    ]
+}
+</script>
+
+<style lang="scss" scoped>
+.newMusic{
+	margin: 24rpx;
+	.title{
+		margin: 20rpx 0;
+	}
+	.item{
+		display: flex;
+		flex-direction: row;
+    align-items: center;
+		margin: 10rpx;
+		.itemImg{
+			height: 150rpx;
+			margin-right: 20rpx;
+			width: 150rpx;
+		}
+		.name{
+			font-size: 24rpx;
+			flex: 1;
+		}
+		.play{
+			width: 60rpx;
+			height: 60rpx;
+		}
+	}
+
+}
+
+</style>

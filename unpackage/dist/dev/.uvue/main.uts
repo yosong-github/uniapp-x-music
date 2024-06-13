@@ -1,0 +1,44 @@
+import App from './App.uvue'
+
+import { createSSRApp } from 'vue'
+export function createApp() {
+	const app = createSSRApp(App)
+	return {
+		app
+	}
+}
+export function main(app: IApp) {
+    definePageRoutes();
+    defineAppConfig();
+    
+    (createApp()['app'] as VueApp).mount(app);
+}
+
+import { AppConfig } from "io.dcloud.uniapp.appframe"
+export class UniAppConfig extends AppConfig {
+    override name: string = "yosong"
+    override appid: string = "__UNI__6983728"
+    override versionName: string = "1.0.0"
+    override versionCode: string = "100"
+    override uniCompileVersion: string = "4.15"
+    
+    constructor() {}
+}
+
+import GenPagesIndexIndexClass from './pages/index/index.uvue?type=page'
+import GenPagesBroadcastingStationIndexClass from './pages/broadcastingStation/index.uvue?type=page'
+function definePageRoutes() {
+__uniRoutes.push({ path: "pages/index/index", component: GenPagesIndexIndexClass, meta: { isQuit: true } as PageMeta, style: utsMapOf([["navigationStyle","custom"],["disableScroll",true],["enablePullDownRefresh",false]]) } as PageRoute)
+__uniRoutes.push({ path: "pages/broadcastingStation/index", component: GenPagesBroadcastingStationIndexClass, meta: { isQuit: false } as PageMeta, style: utsMapOf([["navigationStyle","custom"],["disableScroll",true],["enablePullDownRefresh",false]]) } as PageRoute)
+}
+const __uniTabBar: Map<string, any | null> | null = utsMapOf([["list",[utsMapOf([["pagePath","pages/index/index"]]),utsMapOf([["pagePath","pages/broadcastingStation/index"]])]]])
+const __uniLaunchPage: Map<string, any | null> = utsMapOf([["url","pages/index/index"],["style",utsMapOf([["navigationStyle","custom"],["disableScroll",true],["enablePullDownRefresh",false]])]])
+@Suppress("UNCHECKED_CAST")
+function defineAppConfig(){
+  __uniConfig.entryPagePath = '/pages/index/index'
+  __uniConfig.globalStyle = utsMapOf([["navigationBarTextStyle","black"],["navigationBarTitleText",""],["navigationBarBackgroundColor","#ffffff"],["backgroundColor","#ffffff"]])
+  __uniConfig.tabBar = __uniTabBar as Map<string, any> | null
+  __uniConfig.conditionUrl = ''
+  __uniConfig.uniIdRouter = utsMapOf()
+  __uniConfig.ready = true
+}

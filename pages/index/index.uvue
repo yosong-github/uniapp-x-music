@@ -1,0 +1,39 @@
+<template>
+	<view class="index">
+		<scroll-view class="pageView" :show-scrollbar="false" style="flex:1">
+			<!-- 推荐歌曲 -->
+			<recommend></recommend>
+			<!-- 精品歌单 -->
+			<playlist></playlist>
+			<!-- 推荐新音乐 -->
+			<recommendNew></recommendNew>
+			
+		</scroll-view>
+		
+		<!-- 自定义导航栏 -->
+		<TabBar />
+	</view>
+</template>
+
+<script setup lang="uts">
+import TabBar from '@/components/tabBar/index.vue'
+
+import recommendNew from './component/recommendNewMusic.uvue';
+import recommend from './component/recommend.uvue';
+import playlist from './component/playlist.uvue'
+// 隐藏tabbar
+uni.hideTabBar()
+</script>
+
+<style lang="scss" scoped>
+.index{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	background-color: #f1f8fd;
+	.pageView{
+		// margin-top: var(--status-bar-height);
+	}
+}
+
+</style>

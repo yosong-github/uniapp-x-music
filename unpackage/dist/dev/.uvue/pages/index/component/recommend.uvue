@@ -1,0 +1,21 @@
+export default {}
+
+function GenPagesIndexComponentRecommendRender(): any | null {
+const _ctx = this
+const _cache = this.$.renderCache
+  return createElementVNode("view", utsMapOf({ class: "recommend" }), [
+    createElementVNode("image", utsMapOf({
+      class: "recommendImg",
+      src: "http://p1.music.126.net/tQmjmqYs6bHi3I6srgEWGA==/109951169664272165.jpg",
+      mode: ""
+    })),
+    createElementVNode("view", utsMapOf({ class: "info" }), [
+      createElementVNode("text", utsMapOf({ class: "desc ellipsis" }), "晚星排排坐"),
+      createElementVNode("view", utsMapOf({ class: "tagList" }), [
+        createElementVNode("text", utsMapOf({ class: "tag" }), "华语"),
+        createElementVNode("text", utsMapOf({ class: "tag" }), "灯忙")
+      ])
+    ])
+  ])
+}
+const GenPagesIndexComponentRecommendStyles = [utsMapOf([["recommend", padStyleMapOf(utsMapOf([["position", "relative"], ["height", "400rpx"]]))], ["recommendImg", utsMapOf([[".recommend ", utsMapOf([["width", "100%"], ["height", "100%"]])]])], ["info", utsMapOf([[".recommend ", utsMapOf([["position", "absolute"], ["bottom", "50rpx"], ["left", "50rpx"]])]])], ["desc", utsMapOf([[".recommend .info ", utsMapOf([["color", "#ffffff"], ["fontWeight", "700"]])]])], ["ellipsis", utsMapOf([[".recommend .info ", utsMapOf([["whiteSpace", "nowrap"], ["overflow", "hidden"], ["textOverflow", "ellipsis"]])]])], ["tag", utsMapOf([[".recommend .info .tagList ", utsMapOf([["color", "#ffffff"], ["fontSize", "24rpx"]])]])]])]

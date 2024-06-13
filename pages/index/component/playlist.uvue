@@ -1,0 +1,181 @@
+<template>
+	<view class="highquality">
+		<text class="title">精选歌单</text>
+		<scroll-view direction="horizontal" :show-scrollbar="false" class="list">
+			<template v-for="it in data.result">
+				<view class="item">
+					<image class="itemImg" :src="it['picUrl']" mode=""></image>
+					<text class="name">{{ it['name'] }}</text>
+				</view>
+			</template>
+		</scroll-view>
+	</view>
+</template>
+
+<script setup lang="uts">
+const data = {
+	"hasTaste": false,
+	"code": 200,
+	"category": 0,
+	"result": [
+        {
+            "id": 5437310387,
+            "type": 0,
+            "name": "可以带来快乐的歌曲",
+            "copywriter": "",
+            "picUrl": "https://p2.music.126.net/DtJcpkEwI3izoM9cWtW5Bg==/109951165593305441.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1702307416362,
+            "playCount": 3351187,
+            "trackCount": 48,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 2228795231,
+            "type": 0,
+            "name": "【旋律控】那些让你一秒沦陷的欧美精选",
+            "copywriter": "",
+            "picUrl": "https://p2.music.126.net/Dp8QSsP8xlU7yYIuo8pjCA==/109951167305112641.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1716999810149,
+            "playCount": 31503676,
+            "trackCount": 378,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 877586534,
+            "type": 0,
+            "name": "欧美惊艳歌曲 唤醒沉睡的耳朵",
+            "copywriter": "",
+            "picUrl": "https://p2.music.126.net/lG2_lOc_84JJiubXMax2hw==/19112810625771537.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1717195871942,
+            "playCount": 7571146,
+            "trackCount": 267,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 5349200976,
+            "type": 0,
+            "name": "深夜emo伤感丨一个人一首歌不同的故事",
+            "copywriter": "",
+            "picUrl": "https://p2.music.126.net/O7RmaIOOIPTToDdBYFBIiw==/109951168572162451.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1701995357335,
+            "playCount": 14867513,
+            "trackCount": 118,
+            "highQuality": false,
+            "alg": "byApp_combine"
+        },
+        {
+            "id": 9114261138,
+            "type": 0,
+            "name": "【kpop】五代女团红曲合集！",
+            "copywriter": "",
+            "picUrl": "https://p2.music.126.net/uolcvOl1pHXbkovMxjogAw==/109951169230289740.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1717144703511,
+            "playCount": 432014,
+            "trackCount": 122,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 5314589580,
+            "type": 0,
+            "name": "【K-POP】韩国女团超燃舞曲！！",
+            "copywriter": "",
+            "picUrl": "https://p2.music.126.net/f-ixd7DEAzbse4Yjc8RBeQ==/109951167025971836.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1717517618785,
+            "playCount": 3570619,
+            "trackCount": 126,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 5079932281,
+            "type": 0,
+            "name": "网络热歌精选 (持续更新)",
+            "copywriter": "",
+            "picUrl": "https://p2.music.126.net/GlSh5XnS-OJ9A8cJswirxw==/109951166232601457.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1628953709946,
+            "playCount": 1979772,
+            "trackCount": 68,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 2439058144,
+            "type": 0,
+            "name": "超好听的韩语歌单",
+            "copywriter": "",
+            "picUrl": "https://p1.music.126.net/-_ENCXARoYVbCOoNG5tS8A==/109951168982073386.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1718010681589,
+            "playCount": 3918182,
+            "trackCount": 52,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 2802976810,
+            "type": 0,
+            "name": "『哈利波特』b站剪辑视频歌曲（精选）",
+            "copywriter": "",
+            "picUrl": "https://p1.music.126.net/ubOY62N4noNH-CDmfmt3MA==/109951164081624049.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1632402219832,
+            "playCount": 109467,
+            "trackCount": 25,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        },
+        {
+            "id": 4861736970,
+            "type": 0,
+            "name": "欧美流行歌曲的天花板了吧",
+            "copywriter": "",
+            "picUrl": "https://p1.music.126.net/LHdUvZJ1OS6OlxjSBWn4HQ==/109951164762969900.jpg",
+            "canDislike": true,
+            "trackNumberUpdateTime": 1701452417164,
+            "playCount": 8316378,
+            "trackCount": 99,
+            "highQuality": false,
+            "alg": "byOldUserRedHeart_combine"
+        }
+    ]
+}
+
+</script>
+
+<style lang="scss" scoped>
+.highquality{
+	margin: 24rpx;
+	.title{
+		margin: 20rpx 0;
+	}
+	.list{
+		display: flex;
+		flex-direction: row;
+		
+		.item{
+			width: 200rpx;
+			margin-right: 20rpx;
+			.itemImg{
+				height: 200rpx;
+				width: 200rpx;
+			}
+			.name{
+				font-size: 24rpx;
+				margin-top: 6rpx
+			}
+		}
+	}
+}
+
+</style>

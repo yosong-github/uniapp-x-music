@@ -1,0 +1,40 @@
+{
+  "version": "1",
+  "env": {
+    "compiler_version": "4.15"
+  },
+  "files": {
+    "pages/index/component/highquality.kt": {
+      "md5": "4589e5098de8f93f17a7f8f95379d97e3659967e",
+      "class": "GenPagesIndexComponentHighquality"
+    },
+    "index.kt": {
+      "class": "",
+      "md5": "1f5f3d570afb6cbab9ab354e02014c61c4314780"
+    },
+    "pages/index/index.kt": {
+      "md5": "228e30f53da1af05373dd6ac4f734f829c64cd23",
+      "class": "GenPagesIndexIndex"
+    },
+    "pages/index/component/playlist.kt": {
+      "md5": "d70f17942fecf0f736b2c30483260da4b5a39bed",
+      "class": "GenPagesIndexComponentPlaylist"
+    },
+    "pages/broadcastingStation/index.kt": {
+      "class": "GenPagesBroadcastingStationIndex",
+      "md5": "5e227ad54ea3e5866eef2667cb17afc93238662a"
+    },
+    "pages/index/component/recommend.kt": {
+      "class": "GenPagesIndexComponentRecommend",
+      "md5": "8d21775c427f3092b467ed2451b28e74101d204d"
+    },
+    "pages/index/component/recommendNewMusic.kt": {
+      "class": "GenPagesIndexComponentRecommendNewMusic",
+      "md5": "7c07c9ae9cf9e710b96569e596cd9d863553733b"
+    },
+    "components/tabBar/index.kt": {
+      "md5": "c38f5c7ecbafdc27700a946551f332ea52fc06fe",
+      "class": "GenComponentsTabBarIndex"
+    }
+  }
+}

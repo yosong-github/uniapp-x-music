@@ -1,0 +1,51 @@
+<template>
+	<view class="recommend">
+		<image class="recommendImg" src="http://p1.music.126.net/tQmjmqYs6bHi3I6srgEWGA==/109951169664272165.jpg" mode=""></image>
+		<view class="info">
+			<text class="desc ellipsis">晚星排排坐</text>
+			<view class="tagList">
+				<text class="tag">华语</text>
+				<text class="tag">灯忙</text>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script setup lang="uts">
+</script>
+
+<style lang="scss" scoped>
+.recommend {
+	position: relative;
+	height: 400rpx;
+	// #ifdef APP
+	// margin-top: 20rpx;
+	// #endif
+	.recommendImg {
+		width: 100%;
+		height: 100%;
+	}
+	.info{
+		position: absolute;
+		bottom: 50rpx;
+		left: 50rpx;
+		.desc{
+			color: #fff;
+			font-weight: 700;
+		}
+		
+		.ellipsis {
+		  white-space: nowrap;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+		}
+		.tagList{
+			.tag{
+				color: #fff;
+				font-size: 24rpx
+			}
+			
+		}
+	}
+}
+</style>

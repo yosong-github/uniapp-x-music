@@ -1,0 +1,40 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+			  "navigationStyle": "custom",
+			  "disableScroll": true, // 禁用滚动条，关闭回弹效果
+			  "app-plus": {
+			    "bounce": "none"
+			  },
+			  "enablePullDownRefresh": false // 下拉刷新
+			}
+		},
+		{
+			"path": "pages/broadcastingStation/index",
+			"style": {
+			  "navigationStyle": "custom",
+			  "disableScroll": true, // 禁用滚动条，关闭回弹效果
+			  "app-plus": {
+			    "bounce": "none"
+			  },
+			  "enablePullDownRefresh": false // 下拉刷新
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"list": [{
+			"pagePath": "pages/index/index"
+		}, {
+			"pagePath": "pages/broadcastingStation/index"
+		}]
+	}
+}

@@ -1,0 +1,37 @@
+import TabBar from '@/components/tabBar/index.vue'
+
+import recommendNew from './component/recommendNewMusic.uvue';
+import recommend from './component/recommend.uvue';
+import playlist from './component/playlist.uvue'
+// 隐藏tabbar
+
+export default {
+  __name: 'index',
+  setup(__props: GenPagesIndexIndex) {
+const __ins = getCurrentInstance()!;
+const _ctx = __ins.proxy as GenPagesIndexIndex;
+const _cache = __ins.renderCache;
+
+uni.hideTabBar()
+
+return "INLINE_RENDER"
+}
+
+}
+
+function GenPagesIndexIndexRender(): any | null {
+
+  return createElementVNode("view", utsMapOf({ class: "index" }), [
+    createElementVNode("scroll-view", utsMapOf({
+      class: "pageView",
+      "show-scrollbar": false,
+      style: normalizeStyle(utsMapOf({"flex":"1"}))
+    }), [
+      createVNode(unref(recommend)),
+      createVNode(unref(playlist)),
+      createVNode(unref(recommendNew))
+    ], 4),
+    createVNode(TabBar)
+  ])
+}
+const GenPagesIndexIndexStyles = [utsMapOf([["index", padStyleMapOf(utsMapOf([["display", "flex"], ["flexDirection", "column"], ["height", "100%"], ["backgroundColor", "#f1f8fd"]]))]])]

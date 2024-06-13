@@ -1,0 +1,29 @@
+import TabBar from '@/components/tabBar/index.vue'
+
+
+export default {
+  __name: 'index',
+  setup(__props: GenPagesBroadcastingStationIndex) {
+const __ins = getCurrentInstance()!;
+const _ctx = __ins.proxy as GenPagesBroadcastingStationIndex;
+const _cache = __ins.renderCache;
+
+uni.hideTabBar()
+
+return "INLINE_RENDER"
+}
+
+}
+
+function GenPagesBroadcastingStationIndexRender(): any | null {
+
+  return createElementVNode("view", utsMapOf({ class: "index" }), [
+    createElementVNode("scroll-view", utsMapOf({
+      class: "pageView",
+      "show-scrollbar": false,
+      style: normalizeStyle(utsMapOf({"flex":"1"}))
+    }), " 芜湖 ", 4 /* STYLE */),
+    createVNode(TabBar)
+  ])
+}
+const GenPagesBroadcastingStationIndexStyles = [utsMapOf([["index", padStyleMapOf(utsMapOf([["display", "flex"], ["flexDirection", "column"], ["height", "100%"], ["backgroundColor", "#f1f8fd"]]))], ["pageView", utsMapOf([[".index ", utsMapOf([["marginTop", CSS_VAR_STATUS_BAR_HEIGHT]])]])]])]
