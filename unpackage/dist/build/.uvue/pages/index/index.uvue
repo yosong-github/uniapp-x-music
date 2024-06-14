@@ -1,3 +1,4 @@
+import { ref } from 'vue'
 import TabBar from '@/components/tabBar/index.vue'
 
 import recommendNew from './component/recommendNewMusic.uvue';
@@ -14,6 +15,63 @@ const _cache = __ins.renderCache;
 
 uni.hideTabBar()
 
+
+const menuState = ref(false)
+const isDraw = ref(false)
+
+// 容器
+const containerRef = ref<UniElement | null>(null)
+
+
+const checkMenu = () => {
+	if (menuState.value) {
+		menuState.value = false
+		containerRef.value?.style?.setProperty('left', '0px')
+		containerRef.value?.style?.setProperty('transform', 'scale(1)')
+		containerRef.value?.style?.setProperty('border-radius', '0px')
+	} else {
+		menuState.value = true
+		containerRef.value?.style?.setProperty('left', '400rpx')
+		containerRef.value?.style?.setProperty('transform', 'scale(0.9)')
+		containerRef.value?.style?.setProperty('border-radius', '50rpx')
+	}
+}
+
+
+const drawStartX = ref(0)
+const drawStart = (e: UniTouchEvent) => {
+	drawStartX.value = e.changedTouches[0].clientX
+}
+// 开始移动
+const drawMove = (e: UniTouchEvent) => {
+	if (e.changedTouches[0].clientX - drawStartX.value >= 80 && drawStartX.value <= 50) {
+		containerRef.value?.style?.setProperty('left', '400rpx')
+		containerRef.value?.style?.setProperty('transform', 'scale(0.9)')
+		containerRef.value?.style?.setProperty('border-radius', '50rpx')
+		menuState.value = true
+		isDraw.value = false
+	}
+	if (e.changedTouches[0].clientX - drawStartX.value <= -50) {
+		containerRef.value?.style?.setProperty('left', '0px')
+		containerRef.value?.style?.setProperty('transform', 'scale(1)')
+		containerRef.value?.style?.setProperty('border-radius', '0px')
+		menuState.value = false
+		isDraw.value = false
+	}
+	
+}
+// 结束触摸
+const drawEnd = () => {
+	if (isDraw.value) {
+		menuState.value = false
+		isDraw.value = false
+		containerRef.value?.style?.setProperty('left', '0px')
+		containerRef.value?.style?.setProperty('transform', 'scale(1)')
+		containerRef.value?.style?.setProperty('border-radius', '0px')
+	}
+}
+
+
 return "INLINE_RENDER"
 }
 
@@ -21,17 +79,50 @@ return "INLINE_RENDER"
 
 function GenPagesIndexIndexRender(): any | null {
 
-  return createElementVNode("view", utsMapOf({ class: "index" }), [
-    createElementVNode("scroll-view", utsMapOf({
-      class: "pageView",
-      "show-scrollbar": false,
-      style: normalizeStyle(utsMapOf({"flex":"1"}))
+  return createElementVNode("view", utsMapOf({ class: "index-box" }), [
+    createElementVNode("view", utsMapOf({ class: "menu" }), [
+      createElementVNode("view", utsMapOf({ class: "user" }), [
+        createElementVNode("text", utsMapOf({ class: "menuText" }), "yosong")
+      ]),
+      createElementVNode("view", utsMapOf({ class: "menuList" }), [
+        createElementVNode("text", utsMapOf({ class: "menuText" }), "最近播放"),
+        createElementVNode("text", utsMapOf({ class: "menuText" }), "收藏列表"),
+        createElementVNode("text", utsMapOf({ class: "menuText" }), "修改密码"),
+        createElementVNode("text", utsMapOf({ class: "menuText" }), "我的歌单")
+      ]),
+      createElementVNode("view", utsMapOf({ class: "login_out" }), [
+        createElementVNode("text", utsMapOf({ class: "menuText" }), "退出 登录")
+      ])
+    ]),
+    createElementVNode("view", utsMapOf({
+      class: "index",
+      ref_key: "containerRef",
+      ref: containerRef,
+      onTouchstart: drawStart,
+      onTouchmove: drawMove,
+      onTouchend: drawEnd
     }), [
-      createVNode(unref(recommend)),
-      createVNode(unref(playlist)),
-      createVNode(unref(recommendNew))
-    ], 4),
-    createVNode(TabBar)
+      createElementVNode("view", utsMapOf({
+        class: "menuIconBox",
+        onClick: checkMenu
+      }), [
+        createElementVNode("image", utsMapOf({
+          class: "menuIcon",
+          src: "/static/menu.png",
+          mode: ""
+        }))
+      ]),
+      createElementVNode("scroll-view", utsMapOf({
+        class: "pageView",
+        "show-scrollbar": false,
+        style: normalizeStyle(utsMapOf({"flex":"1"}))
+      }), [
+        createVNode(unref(recommend)),
+        createVNode(unref(playlist)),
+        createVNode(unref(recommendNew))
+      ], 4),
+      createVNode(TabBar)
+    ], 544)
   ])
 }
-const GenPagesIndexIndexStyles = [utsMapOf([["index", padStyleMapOf(utsMapOf([["display", "flex"], ["flexDirection", "column"], ["height", "100%"], ["backgroundColor", "#f1f8fd"]]))]])]
+const GenPagesIndexIndexStyles = [utsMapOf([["index-box", padStyleMapOf(utsMapOf([["position", "relative"], ["height", "100%"]]))], ["menu", utsMapOf([[".index-box ", utsMapOf([["position", "absolute"], ["top", "0%"], ["left", "0%"], ["height", "100%"], ["width", "100%"], ["backgroundColor", "#f1f8fd"], ["paddingTop", "80rpx"], ["paddingRight", 0], ["paddingBottom", "80rpx"], ["paddingLeft", "20rpx"], ["justifyContent", "space-between"]])]])], ["user", utsMapOf([[".index-box .menu ", utsMapOf([["marginTop", "80rpx"], ["backgroundColor", "#3e2ad1"], ["paddingTop", "40rpx"], ["paddingRight", "10rpx"], ["paddingBottom", "40rpx"], ["paddingLeft", "10rpx"], ["marginLeft", "-20rpx"], ["width", "350rpx"], ["borderTopRightRadius", "16rpx"], ["borderBottomRightRadius", "16rpx"]])]])], ["menuText", utsMapOf([[".index-box .menu .user ", utsMapOf([["marginLeft", "10rpx"], ["color", "#ffffff"]])], [".index-box .menu .menuList ", utsMapOf([["marginTop", 0], ["marginRight", 0], ["marginBottom", "70rpx"], ["marginLeft", "20rpx"]])], [".index-box .menu ", utsMapOf([["color", "#000000"]])]])], ["menuList", utsMapOf([[".index-box .menu ", utsMapOf([["height", "70%"], ["marginTop", "80rpx"]])]])], ["login_out", utsMapOf([[".index-box .menu ", utsMapOf([["marginTop", 0], ["marginRight", 0], ["marginBottom", "70rpx"], ["marginLeft", "20rpx"]])]])], ["index", utsMapOf([[".index-box ", utsMapOf([["boxShadow", "0 1rpx 6rpx rgba(0, 0, 0, 0.3)"], ["position", "absolute"], ["top", "0rpx"], ["left", "0rpx"], ["transitionDuration", "0.1s"], ["transitionTimingFunction", "linear"], ["display", "flex"], ["flexDirection", "column"], ["height", "100%"], ["width", "100%"], ["backgroundImage", "linear-gradient(to bottom, #ffffff, #f1f8fd)"]])]])], ["menuIconBox", utsMapOf([[".index-box .index ", utsMapOf([["position", "absolute"], ["marginTop", CSS_VAR_STATUS_BAR_HEIGHT], ["top", "20rpx"], ["left", "20rpx"], ["width", "60rpx"], ["height", "60rpx"], ["backgroundColor", "#3e2ad1"], ["borderRadius", "6rpx"], ["zIndex", 9999], ["justifyContent", "center"], ["alignItems", "center"]])]])], ["menuIcon", utsMapOf([[".index-box .index .menuIconBox ", utsMapOf([["zIndex", 9999], ["height", "30rpx"], ["width", "40rpx"]])]])], ["@TRANSITION", utsMapOf([["index", utsMapOf([["duration", "0.1s"], ["timingFunction", "linear"]])]])]])]

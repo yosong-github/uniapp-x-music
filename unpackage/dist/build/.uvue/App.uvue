@@ -19,7 +19,7 @@
 			console.log('App LastPageBackPress')
 			if (firstBackTime == 0) {
 				uni.showToast({
-					title: '再按一次退出应用',
+					title: '再按一次返回桌面',
 					position: 'bottom',
 				})
 				firstBackTime = Date.now()
@@ -28,7 +28,7 @@
 				}, 2000)
 			} else if (Date.now() - firstBackTime < 2000) {
 				firstBackTime = Date.now()
-				uni.exit()
+				UTSAndroid.getUniActivity()?.moveTaskToBack(true)
 			}
 		},
 

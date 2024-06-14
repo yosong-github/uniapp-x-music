@@ -4,37 +4,37 @@
     "compiler_version": "4.15"
   },
   "files": {
-    "pages/index/component/recommend.kt": {
-      "class": "GenPagesIndexComponentRecommend",
-      "md5": "8d21775c427f3092b467ed2451b28e74101d204d"
-    },
-    "components/tabBar/index.kt": {
-      "md5": "c38f5c7ecbafdc27700a946551f332ea52fc06fe",
-      "class": "GenComponentsTabBarIndex"
-    },
     "pages/index/component/playlist.kt": {
       "md5": "d70f17942fecf0f736b2c30483260da4b5a39bed",
       "class": "GenPagesIndexComponentPlaylist"
     },
-    "pages/index/component/highquality.kt": {
-      "md5": "4589e5098de8f93f17a7f8f95379d97e3659967e",
-      "class": "GenPagesIndexComponentHighquality"
+    "index.kt": {
+      "md5": "6bad5e995ef2a09c941a789fa4595a971cc2c3ad",
+      "class": ""
     },
     "pages/index/component/recommendNewMusic.kt": {
-      "class": "GenPagesIndexComponentRecommendNewMusic",
-      "md5": "7c07c9ae9cf9e710b96569e596cd9d863553733b"
+      "md5": "86ddd4aea6ecd01510044eb7bd5bad5e0481047d",
+      "class": "GenPagesIndexComponentRecommendNewMusic"
+    },
+    "pages/index/component/recommend.kt": {
+      "class": "GenPagesIndexComponentRecommend",
+      "md5": "8d21775c427f3092b467ed2451b28e74101d204d"
     },
     "pages/broadcastingStation/index.kt": {
       "md5": "5e227ad54ea3e5866eef2667cb17afc93238662a",
       "class": "GenPagesBroadcastingStationIndex"
     },
     "pages/index/index.kt": {
-      "md5": "228e30f53da1af05373dd6ac4f734f829c64cd23",
+      "md5": "f5637e5a2d92b98dd930e261bbe5e465d781fc83",
       "class": "GenPagesIndexIndex"
     },
-    "index.kt": {
-      "class": "",
-      "md5": "6bad5e995ef2a09c941a789fa4595a971cc2c3ad"
+    "pages/index/component/highquality.kt": {
+      "class": "GenPagesIndexComponentHighquality",
+      "md5": "4589e5098de8f93f17a7f8f95379d97e3659967e"
+    },
+    "components/tabBar/index.kt": {
+      "class": "GenComponentsTabBarIndex",
+      "md5": "cf3f946209852ea4b6f84ff0ca7fe185b4066240"
     }
   }
 }

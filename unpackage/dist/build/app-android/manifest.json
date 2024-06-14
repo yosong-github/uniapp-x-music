@@ -24,14 +24,25 @@
       },
       "splashScreens": {
         "android": {
-          "xhdpi": "C:/Users/24045/Desktop/app.png",
-          "xxhdpi": "C:/Users/24045/Desktop/app.png",
-          "xxxhdpi": "C:/Users/24045/Desktop/app.png"
+          "xhdpi": "static/app.png",
+          "xxhdpi": "static/app.png",
+          "xxxhdpi": "static/app.png"
+        },
+        "android12": {
+          "background": "",
+          "icon": {
+            "xhdpi": "static/app.png",
+            "xxhdpi": "static/app.png"
+          },
+          "brand": {
+            "xhdpi": "static/app.png",
+            "xxhdpi": "static/app.png",
+            "xxxhdpi": "static/app.png"
+          }
         }
       },
       "modules": {
-        "uni-prompt": {},
-        "uni-exit": {}
+        "uni-prompt": {}
       }
     }
   }

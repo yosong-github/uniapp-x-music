@@ -32,8 +32,10 @@ onShow(() => {
 
 <style lang="scss" scoped>
 .yoTabbar{
-	height: 140rpx;
-	width: 100%;
+	height: 140rpx;		
+	// #ifdef H5
+	// width: 100vw;
+	// #endif
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -41,6 +43,8 @@ onShow(() => {
 	overflow: visible;
 	padding-bottom: var(safe-area-inset-bottom);
 	position: relative;
+	left: 0%;
+	bottom: 0%;
 	.bg{
 		position: absolute;
 		bottom: 0%;

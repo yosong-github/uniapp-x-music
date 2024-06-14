@@ -1155,6 +1155,849 @@ open class GenPagesIndexComponentRecommendNewMusic : VueComponent {
                         var alg = "server_doudi"
                     },
                     object : UTSJSONObject() {
+                        var id: Number = 2161527760
+                        var type: Number = 4
+                        var name = "不如回家喝自来水 (Live版)"
+                        var copywriter = null
+                        var picUrl = "http://p1.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                        var canDislike = false
+                        var trackNumberUpdateTime = null
+                        var song = object : UTSJSONObject() {
+                            var name = "不如回家喝自来水 (Live版)"
+                            var id: Number = 2161527760
+                            var position: Number = 0
+                            var alias = ""
+                            var status: Number = 0
+                            var fee: Number = 8
+                            var copyrightId: Number = 2712562
+                            var disc = "01"
+                            var no: Number = 1
+                            var artists = utsArrayOf(
+                                object : UTSJSONObject() {
+                                    var name = "陈楚生"
+                                    var id: Number = 2124
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                },
+                                object : UTSJSONObject() {
+                                    var name = "王赫野"
+                                    var id: Number = 47091532
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                }
+                            )
+                            var album = object : UTSJSONObject() {
+                                var name = "天赐的声音第五季 第6期"
+                                var id: Number = 197888525
+                                var type = "专辑"
+                                var size: Number = 12
+                                var picId: Number = 109951169638223100
+                                var blurPicUrl = "http://p4.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                                var companyId: Number = 0
+                                var pic: Number = 109951169638223100
+                                var picUrl = "http://p3.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                                var publishTime: Number = 1717084800000
+                                var description = ""
+                                var tags = ""
+                                var company = "浙江卫视"
+                                var briefDesc = ""
+                                var artist = object : UTSJSONObject() {
+                                    var name = ""
+                                    var id: Number = 0
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                }
+                                var songs = ""
+                                var alias = ""
+                                var status: Number = 1
+                                var copyrightId: Number = 2712562
+                                var commentThreadId = "R_AL_3_197888525"
+                                var artists = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var name = "天赐的声音"
+                                        var id: Number = 34485896
+                                        var picId: Number = 0
+                                        var img1v1Id: Number = 0
+                                        var briefDesc = ""
+                                        var picUrl = ""
+                                        var img1v1Url = "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                        var albumSize: Number = 0
+                                        var alias = ""
+                                        var trans = ""
+                                        var musicSize: Number = 0
+                                        var topicPerson: Number = 0
+                                    }
+                                )
+                                var subType = "现场版"
+                                var transName = null
+                                var onSale = false
+                                var mark: Number = 0
+                                var gapless: Number = 0
+                                var picId_str = "109951169638223106"
+                            }
+                            var starred = false
+                            var popularity: Number = 100
+                            var score: Number = 100
+                            var starredNum: Number = 0
+                            var duration: Number = 201306
+                            var playedNum: Number = 0
+                            var dayPlays: Number = 0
+                            var hearTime: Number = 0
+                            var sqMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309970
+                                var size: Number = 25488081
+                                var extension = "flac"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 1012906
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58066
+                            }
+                            var hrMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309975
+                                var size: Number = 44859627
+                                var extension = "flac"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 1782740
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58104
+                            }
+                            var ringtone = ""
+                            var crbt = null
+                            var audition = null
+                            var copyFrom = ""
+                            var commentThreadId = "R_SO_4_2161527760"
+                            var rtUrl = null
+                            var ftype: Number = 0
+                            var rtUrls = ""
+                            var copyright: Number = 0
+                            var transName = null
+                            var sign = null
+                            var mark: Number = 0
+                            var originCoverType: Number = 2
+                            var originSongSimpleData = object : UTSJSONObject() {
+                                var songId: Number = 2109988312
+                                var name = "不如回家喝自来水"
+                                var artists = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var id: Number = 31255673
+                                        var name = "刘烨溦"
+                                    }
+                                )
+                                var albumMeta = object : UTSJSONObject() {
+                                    var id: Number = 181445218
+                                    var name = "不如回家喝自来水"
+                                }
+                            }
+                            var single: Number = 0
+                            var noCopyrightRcmd = null
+                            var mvid: Number = 0
+                            var hMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309979
+                                var size: Number = 8054445
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 320000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58142
+                            }
+                            var mMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309972
+                                var size: Number = 4832685
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 192000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -55602
+                            }
+                            var lMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309976
+                                var size: Number = 3221805
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 128000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -54067
+                            }
+                            var bMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309976
+                                var size: Number = 3221805
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 128000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -54067
+                            }
+                            var rtype: Number = 0
+                            var rurl = null
+                            var mp3Url = null
+                            var privilege = object : UTSJSONObject() {
+                                var id: Number = 2161527760
+                                var fee: Number = 8
+                                var payed: Number = 0
+                                var st: Number = 0
+                                var pl: Number = 320000
+                                var dl: Number = 0
+                                var sp: Number = 7
+                                var cp: Number = 1
+                                var subp: Number = 1
+                                var cs = false
+                                var maxbr: Number = 999000
+                                var fl: Number = 320000
+                                var toast = false
+                                var flag: Number = 4
+                                var preSell = false
+                                var playMaxbr: Number = 999000
+                                var downloadMaxbr: Number = 999000
+                                var maxBrLevel = "hires"
+                                var playMaxBrLevel = "hires"
+                                var downloadMaxBrLevel = "hires"
+                                var plLevel = "exhigh"
+                                var dlLevel = "none"
+                                var flLevel = "exhigh"
+                                var rscl = null
+                                var freeTrialPrivilege = object : UTSJSONObject() {
+                                    var resConsumable = false
+                                    var userConsumable = false
+                                    var listenType = null
+                                    var cannotListenReason = null
+                                    var playReason = null
+                                }
+                                var rightSource: Number = 0
+                                var chargeInfoList = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 128000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 192000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 320000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 999000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 1
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 1999000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 1
+                                    }
+                                )
+                            }
+                        }
+                        var alg = "server_doudi"
+                    },
+                    object : UTSJSONObject() {
+                        var id: Number = 2161527760
+                        var type: Number = 4
+                        var name = "不如回家喝自来水 (Live版)"
+                        var copywriter = null
+                        var picUrl = "http://p1.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                        var canDislike = false
+                        var trackNumberUpdateTime = null
+                        var song = object : UTSJSONObject() {
+                            var name = "不如回家喝自来水 (Live版)"
+                            var id: Number = 2161527760
+                            var position: Number = 0
+                            var alias = ""
+                            var status: Number = 0
+                            var fee: Number = 8
+                            var copyrightId: Number = 2712562
+                            var disc = "01"
+                            var no: Number = 1
+                            var artists = utsArrayOf(
+                                object : UTSJSONObject() {
+                                    var name = "陈楚生"
+                                    var id: Number = 2124
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                },
+                                object : UTSJSONObject() {
+                                    var name = "王赫野"
+                                    var id: Number = 47091532
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                }
+                            )
+                            var album = object : UTSJSONObject() {
+                                var name = "天赐的声音第五季 第6期"
+                                var id: Number = 197888525
+                                var type = "专辑"
+                                var size: Number = 12
+                                var picId: Number = 109951169638223100
+                                var blurPicUrl = "http://p4.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                                var companyId: Number = 0
+                                var pic: Number = 109951169638223100
+                                var picUrl = "http://p3.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                                var publishTime: Number = 1717084800000
+                                var description = ""
+                                var tags = ""
+                                var company = "浙江卫视"
+                                var briefDesc = ""
+                                var artist = object : UTSJSONObject() {
+                                    var name = ""
+                                    var id: Number = 0
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                }
+                                var songs = ""
+                                var alias = ""
+                                var status: Number = 1
+                                var copyrightId: Number = 2712562
+                                var commentThreadId = "R_AL_3_197888525"
+                                var artists = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var name = "天赐的声音"
+                                        var id: Number = 34485896
+                                        var picId: Number = 0
+                                        var img1v1Id: Number = 0
+                                        var briefDesc = ""
+                                        var picUrl = ""
+                                        var img1v1Url = "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                        var albumSize: Number = 0
+                                        var alias = ""
+                                        var trans = ""
+                                        var musicSize: Number = 0
+                                        var topicPerson: Number = 0
+                                    }
+                                )
+                                var subType = "现场版"
+                                var transName = null
+                                var onSale = false
+                                var mark: Number = 0
+                                var gapless: Number = 0
+                                var picId_str = "109951169638223106"
+                            }
+                            var starred = false
+                            var popularity: Number = 100
+                            var score: Number = 100
+                            var starredNum: Number = 0
+                            var duration: Number = 201306
+                            var playedNum: Number = 0
+                            var dayPlays: Number = 0
+                            var hearTime: Number = 0
+                            var sqMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309970
+                                var size: Number = 25488081
+                                var extension = "flac"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 1012906
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58066
+                            }
+                            var hrMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309975
+                                var size: Number = 44859627
+                                var extension = "flac"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 1782740
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58104
+                            }
+                            var ringtone = ""
+                            var crbt = null
+                            var audition = null
+                            var copyFrom = ""
+                            var commentThreadId = "R_SO_4_2161527760"
+                            var rtUrl = null
+                            var ftype: Number = 0
+                            var rtUrls = ""
+                            var copyright: Number = 0
+                            var transName = null
+                            var sign = null
+                            var mark: Number = 0
+                            var originCoverType: Number = 2
+                            var originSongSimpleData = object : UTSJSONObject() {
+                                var songId: Number = 2109988312
+                                var name = "不如回家喝自来水"
+                                var artists = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var id: Number = 31255673
+                                        var name = "刘烨溦"
+                                    }
+                                )
+                                var albumMeta = object : UTSJSONObject() {
+                                    var id: Number = 181445218
+                                    var name = "不如回家喝自来水"
+                                }
+                            }
+                            var single: Number = 0
+                            var noCopyrightRcmd = null
+                            var mvid: Number = 0
+                            var hMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309979
+                                var size: Number = 8054445
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 320000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58142
+                            }
+                            var mMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309972
+                                var size: Number = 4832685
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 192000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -55602
+                            }
+                            var lMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309976
+                                var size: Number = 3221805
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 128000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -54067
+                            }
+                            var bMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309976
+                                var size: Number = 3221805
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 128000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -54067
+                            }
+                            var rtype: Number = 0
+                            var rurl = null
+                            var mp3Url = null
+                            var privilege = object : UTSJSONObject() {
+                                var id: Number = 2161527760
+                                var fee: Number = 8
+                                var payed: Number = 0
+                                var st: Number = 0
+                                var pl: Number = 320000
+                                var dl: Number = 0
+                                var sp: Number = 7
+                                var cp: Number = 1
+                                var subp: Number = 1
+                                var cs = false
+                                var maxbr: Number = 999000
+                                var fl: Number = 320000
+                                var toast = false
+                                var flag: Number = 4
+                                var preSell = false
+                                var playMaxbr: Number = 999000
+                                var downloadMaxbr: Number = 999000
+                                var maxBrLevel = "hires"
+                                var playMaxBrLevel = "hires"
+                                var downloadMaxBrLevel = "hires"
+                                var plLevel = "exhigh"
+                                var dlLevel = "none"
+                                var flLevel = "exhigh"
+                                var rscl = null
+                                var freeTrialPrivilege = object : UTSJSONObject() {
+                                    var resConsumable = false
+                                    var userConsumable = false
+                                    var listenType = null
+                                    var cannotListenReason = null
+                                    var playReason = null
+                                }
+                                var rightSource: Number = 0
+                                var chargeInfoList = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 128000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 192000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 320000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 999000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 1
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 1999000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 1
+                                    }
+                                )
+                            }
+                        }
+                        var alg = "server_doudi"
+                    },
+                    object : UTSJSONObject() {
+                        var id: Number = 2161527760
+                        var type: Number = 4
+                        var name = "不如回家喝自来水 (Live版)"
+                        var copywriter = null
+                        var picUrl = "http://p1.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                        var canDislike = false
+                        var trackNumberUpdateTime = null
+                        var song = object : UTSJSONObject() {
+                            var name = "不如回家喝自来水 (Live版)"
+                            var id: Number = 2161527760
+                            var position: Number = 0
+                            var alias = ""
+                            var status: Number = 0
+                            var fee: Number = 8
+                            var copyrightId: Number = 2712562
+                            var disc = "01"
+                            var no: Number = 1
+                            var artists = utsArrayOf(
+                                object : UTSJSONObject() {
+                                    var name = "陈楚生"
+                                    var id: Number = 2124
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                },
+                                object : UTSJSONObject() {
+                                    var name = "王赫野"
+                                    var id: Number = 47091532
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                }
+                            )
+                            var album = object : UTSJSONObject() {
+                                var name = "天赐的声音第五季 第6期"
+                                var id: Number = 197888525
+                                var type = "专辑"
+                                var size: Number = 12
+                                var picId: Number = 109951169638223100
+                                var blurPicUrl = "http://p4.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                                var companyId: Number = 0
+                                var pic: Number = 109951169638223100
+                                var picUrl = "http://p3.music.126.net/NCsnuLNwwh8u2GuiFOLsDg==/109951169638223106.jpg"
+                                var publishTime: Number = 1717084800000
+                                var description = ""
+                                var tags = ""
+                                var company = "浙江卫视"
+                                var briefDesc = ""
+                                var artist = object : UTSJSONObject() {
+                                    var name = ""
+                                    var id: Number = 0
+                                    var picId: Number = 0
+                                    var img1v1Id: Number = 0
+                                    var briefDesc = ""
+                                    var picUrl = ""
+                                    var img1v1Url = "http://p3.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                    var albumSize: Number = 0
+                                    var alias = ""
+                                    var trans = ""
+                                    var musicSize: Number = 0
+                                    var topicPerson: Number = 0
+                                }
+                                var songs = ""
+                                var alias = ""
+                                var status: Number = 1
+                                var copyrightId: Number = 2712562
+                                var commentThreadId = "R_AL_3_197888525"
+                                var artists = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var name = "天赐的声音"
+                                        var id: Number = 34485896
+                                        var picId: Number = 0
+                                        var img1v1Id: Number = 0
+                                        var briefDesc = ""
+                                        var picUrl = ""
+                                        var img1v1Url = "http://p4.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg"
+                                        var albumSize: Number = 0
+                                        var alias = ""
+                                        var trans = ""
+                                        var musicSize: Number = 0
+                                        var topicPerson: Number = 0
+                                    }
+                                )
+                                var subType = "现场版"
+                                var transName = null
+                                var onSale = false
+                                var mark: Number = 0
+                                var gapless: Number = 0
+                                var picId_str = "109951169638223106"
+                            }
+                            var starred = false
+                            var popularity: Number = 100
+                            var score: Number = 100
+                            var starredNum: Number = 0
+                            var duration: Number = 201306
+                            var playedNum: Number = 0
+                            var dayPlays: Number = 0
+                            var hearTime: Number = 0
+                            var sqMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309970
+                                var size: Number = 25488081
+                                var extension = "flac"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 1012906
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58066
+                            }
+                            var hrMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309975
+                                var size: Number = 44859627
+                                var extension = "flac"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 1782740
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58104
+                            }
+                            var ringtone = ""
+                            var crbt = null
+                            var audition = null
+                            var copyFrom = ""
+                            var commentThreadId = "R_SO_4_2161527760"
+                            var rtUrl = null
+                            var ftype: Number = 0
+                            var rtUrls = ""
+                            var copyright: Number = 0
+                            var transName = null
+                            var sign = null
+                            var mark: Number = 0
+                            var originCoverType: Number = 2
+                            var originSongSimpleData = object : UTSJSONObject() {
+                                var songId: Number = 2109988312
+                                var name = "不如回家喝自来水"
+                                var artists = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var id: Number = 31255673
+                                        var name = "刘烨溦"
+                                    }
+                                )
+                                var albumMeta = object : UTSJSONObject() {
+                                    var id: Number = 181445218
+                                    var name = "不如回家喝自来水"
+                                }
+                            }
+                            var single: Number = 0
+                            var noCopyrightRcmd = null
+                            var mvid: Number = 0
+                            var hMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309979
+                                var size: Number = 8054445
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 320000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -58142
+                            }
+                            var mMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309972
+                                var size: Number = 4832685
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 192000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -55602
+                            }
+                            var lMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309976
+                                var size: Number = 3221805
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 128000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -54067
+                            }
+                            var bMusic = object : UTSJSONObject() {
+                                var name = null
+                                var id: Number = 9236309976
+                                var size: Number = 3221805
+                                var extension = "mp3"
+                                var sr: Number = 48000
+                                var dfsId: Number = 0
+                                var bitrate: Number = 128000
+                                var playTime: Number = 201306
+                                var volumeDelta: Number = -54067
+                            }
+                            var rtype: Number = 0
+                            var rurl = null
+                            var mp3Url = null
+                            var privilege = object : UTSJSONObject() {
+                                var id: Number = 2161527760
+                                var fee: Number = 8
+                                var payed: Number = 0
+                                var st: Number = 0
+                                var pl: Number = 320000
+                                var dl: Number = 0
+                                var sp: Number = 7
+                                var cp: Number = 1
+                                var subp: Number = 1
+                                var cs = false
+                                var maxbr: Number = 999000
+                                var fl: Number = 320000
+                                var toast = false
+                                var flag: Number = 4
+                                var preSell = false
+                                var playMaxbr: Number = 999000
+                                var downloadMaxbr: Number = 999000
+                                var maxBrLevel = "hires"
+                                var playMaxBrLevel = "hires"
+                                var downloadMaxBrLevel = "hires"
+                                var plLevel = "exhigh"
+                                var dlLevel = "none"
+                                var flLevel = "exhigh"
+                                var rscl = null
+                                var freeTrialPrivilege = object : UTSJSONObject() {
+                                    var resConsumable = false
+                                    var userConsumable = false
+                                    var listenType = null
+                                    var cannotListenReason = null
+                                    var playReason = null
+                                }
+                                var rightSource: Number = 0
+                                var chargeInfoList = utsArrayOf(
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 128000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 192000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 320000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 0
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 999000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 1
+                                    },
+                                    object : UTSJSONObject() {
+                                        var rate: Number = 1999000
+                                        var chargeUrl = null
+                                        var chargeMessage = null
+                                        var chargeType: Number = 1
+                                    }
+                                )
+                            }
+                        }
+                        var alg = "server_doudi"
+                    },
+                    object : UTSJSONObject() {
                         var id: Number = 2156439313
                         var type: Number = 4
                         var name = "虹之间 (Live版)"

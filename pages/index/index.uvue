@@ -1,21 +1,49 @@
 <template>
-	<view class="index">
-		<scroll-view class="pageView" :show-scrollbar="false" style="flex:1">
-			<!-- 推荐歌曲 -->
-			<recommend></recommend>
-			<!-- 精品歌单 -->
-			<playlist></playlist>
-			<!-- 推荐新音乐 -->
-			<recommendNew></recommendNew>
+	<view class="index-box">
+		<!-- 个人菜单 -->
+		<view class="menu">
+			<view class="user">
+				<text class="menuText">yosong</text>
+			</view>
+			<view class="menuList">
+				<text class="menuText">最近播放</text>
+				<text class="menuText">收藏列表</text>
+				<text class="menuText">修改密码</text>
+				<text class="menuText">我的歌单</text>
+			</view>
 			
-		</scroll-view>
+			<view class="login_out">
+				<text class="menuText">退出 登录</text>
+			</view>
+		</view>
 		
-		<!-- 自定义导航栏 -->
-		<TabBar />
+		<!-- 主体内容 -->
+		<view class="index"
+			ref="containerRef"
+			@touchstart="drawStart"
+			@touchmove="drawMove"
+			@touchend="drawEnd">	
+			<view class="menuIconBox" @click="checkMenu">
+				<image class="menuIcon" src="../../static/menu.png" mode=""></image>
+			</view>
+			<scroll-view class="pageView" :show-scrollbar="false" style="flex:1">
+				<!-- 推荐歌曲 -->
+				<recommend></recommend>
+				<!-- 精品歌单 -->
+				<playlist></playlist>
+				<!-- 推荐新音乐 -->
+				<recommendNew></recommendNew>
+				
+			</scroll-view>
+			
+			<!-- 自定义导航栏 -->
+			<TabBar />
+		</view>
 	</view>
 </template>
 
 <script setup lang="uts">
+import { ref } from 'vue'
 import TabBar from '@/components/tabBar/index.vue'
 
 import recommendNew from './component/recommendNewMusic.uvue';
@@ -23,17 +51,148 @@ import recommend from './component/recommend.uvue';
 import playlist from './component/playlist.uvue'
 // 隐藏tabbar
 uni.hideTabBar()
+
+
+const menuState = ref(false)
+const isDraw = ref(false)
+
+// 容器
+const containerRef = ref<UniElement | null>(null)
+
+
+const checkMenu = () => {
+	if (menuState.value) {
+		menuState.value = false
+		containerRef.value?.style?.setProperty('left', '0px')
+		containerRef.value?.style?.setProperty('transform', 'scale(1)')
+		containerRef.value?.style?.setProperty('border-radius', '0px')
+	} else {
+		menuState.value = true
+		containerRef.value?.style?.setProperty('left', '400rpx')
+		containerRef.value?.style?.setProperty('transform', 'scale(0.9)')
+		containerRef.value?.style?.setProperty('border-radius', '50rpx')
+	}
+}
+
+
+const drawStartX = ref(0)
+const drawStart = (e: UniTouchEvent) => {
+	drawStartX.value = e.changedTouches[0].clientX
+}
+// 开始移动
+const drawMove = (e: UniTouchEvent) => {
+	if (e.changedTouches[0].clientX - drawStartX.value >= 80 && drawStartX.value <= 50) {
+		containerRef.value?.style?.setProperty('left', '400rpx')
+		containerRef.value?.style?.setProperty('transform', 'scale(0.9)')
+		containerRef.value?.style?.setProperty('border-radius', '50rpx')
+		menuState.value = true
+		isDraw.value = false
+	}
+	if (e.changedTouches[0].clientX - drawStartX.value <= -50) {
+		containerRef.value?.style?.setProperty('left', '0px')
+		containerRef.value?.style?.setProperty('transform', 'scale(1)')
+		containerRef.value?.style?.setProperty('border-radius', '0px')
+		menuState.value = false
+		isDraw.value = false
+	}
+	
+}
+// 结束触摸
+const drawEnd = () => {
+	if (isDraw.value) {
+		menuState.value = false
+		isDraw.value = false
+		containerRef.value?.style?.setProperty('left', '0px')
+		containerRef.value?.style?.setProperty('transform', 'scale(1)')
+		containerRef.value?.style?.setProperty('border-radius', '0px')
+	}
+}
+
 </script>
 
 <style lang="scss" scoped>
-.index{
-	display: flex;
-	flex-direction: column;
+.index-box{
+	position: relative;
 	height: 100%;
-	background-color: #f1f8fd;
-	.pageView{
-		// margin-top: var(--status-bar-height);
+	.menu{
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		height: 100%;
+		width: 100%;
+		background-color: #f1f8fd;
+		padding: 80rpx 0 80rpx 20rpx;
+		justify-content: space-between;
+		.user{
+			margin-top: 80rpx;
+			background-color: #3e2ad1;
+			padding: 40rpx 10rpx;
+			margin-left: -20rpx;
+			width: 350rpx;
+			border-top-right-radius: 16rpx;
+			border-bottom-right-radius: 16rpx;
+			.menuText{
+				margin-left: 10rpx;
+				color: #fff
+			}
+		}
+		.menuList{
+			height: 70%;
+			margin-top: 80rpx;
+			.menuText{
+				margin: 0 0 70rpx 20rpx;
+			}
+		}
+		.login_out{
+			margin: 0 0 70rpx 20rpx;
+		}
+		.menuText{
+			color: #000;
+		}
 	}
+	.index{
+		box-shadow: 0 1rpx 6rpx hsl(0deg 0% 0% / 0.3);
+		position: absolute;
+		top: 0rpx;
+		left: 0rpx;
+		transition-duration: .1s;
+		transition-timing-function: linear;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		// background-color: #f1f8fd;
+		background: linear-gradient(to bottom, #ffffff, #f1f8fd);
+		.menuIconBox{
+			position: absolute;
+			// #ifdef APP
+			margin-top: var(--status-bar-height);
+			top: 20rpx;
+			left: 20rpx;
+			// #endif
+			// #ifdef H5
+			top: 40rpx;
+			left: 20rpx;
+			// #endif
+			width: 60rpx;
+			height: 60rpx;
+			background-color: #3e2ad1;
+			border-radius: 6rpx;
+			z-index: 9999;
+			justify-content: center;
+			align-items: center;
+			.menuIcon{
+				z-index: 9999;
+				height: 30rpx;
+				width: 40rpx;
+			}			
+		}
+		.pageView{
+			// margin-top: var(--status-bar-height);
+		}
+	}
+	
 }
+	
 
 </style>
